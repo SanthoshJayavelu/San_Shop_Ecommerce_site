@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Shop</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body>
+    <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx"><img src="assets/images/log-in-img.jpg" alt="" /></div>
+            <div class="formBx">
+              <form action="" onsubmit="return false;">
+                <h2>Sign In</h2>
+                <input type="text" name="" placeholder="Username" />
+                <input type="password" name="" placeholder="Password" />
+            
+                <a href="home.html" class="btn bg-primary text-light">Log in</a>
+                <p class="signup">
+                  Don't have an account ?
+                  <a href="#" onclick="toggleForm();">Sign Up.</a>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="user signupBx">
+            <div class="formBx">
+              <form action="" onsubmit="return false;">
+                <h2>Create an account</h2>
+                <input type="text" name="" placeholder="Username" />
+                <input type="email" name="" placeholder="Email Address" />
+                <input type="password" name="" placeholder="Create Password" />
+                <input type="password" name="" placeholder="Confirm Password" />
+                <a href="home.html" class="btn bg-primary text-light">Sign Up</a>
+                <p class="signup">
+                  Already have an account ?
+                  <a href="#" onclick="toggleForm();">Sign in.</a>
+                </p>
+              </form>
+            </div>
+            <div class="imgBx"><img src="assets/images/log-in-img.jpg"  alt="" /></div>
+          </div>
+        </div>
+      </section>
+<script src="./_js/script.js"></script>
+<!-- END: Login Card Component v1.0 --> 
+<script>
+const toggleForm = () => {
+  const container = document.querySelector('.container');
+  container.classList.toggle('active');
+};</script>
+
+
+</body>
+</html>
